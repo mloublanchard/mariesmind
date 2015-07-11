@@ -1,0 +1,40 @@
+@import url(http://fonts.googleapis.com/css?family=Lato:400,700);
+
+$headings-font-family:									lato;
+$font-family-sans-serif: 								'lato';
+$navbar-default-bg:											#f39c12;
+$navbar-default-link-color: 						#ecf0f1;
+$navbar-default-link-hover-color: 			#34495e;
+$navbar-default-brand-hover-color:			#34495e;
+$navbar-default-toggle-border-color: 		#f39c12;
+$navbar-default-toggle-icon-bar-bg:			#34495e;
+$navbar-default-border:									#ecf0f1;
+$navbar-default-toggle-icon-bar-bg:			#d35400;
+$navbar-default-link-disabled-color:    #ecf0f1;
+$navbar-default-toggle-hover-bg:				#f39c12;
+
+$headings-color: 												#34495e;
+
+$btn-primary-bg:												#f39c12;
+$btn-danger-bg:													#e74c3c;
+$btn-primary-hover-color:								#34495e;
+
+
+$link-color:														#3498db;
+$link-active-color:											#34495e;
+
+
+$jumbotron-heading-color:								#34495e;
+
+.center {
+	text-align: center;
+}
+
+.navbar-brand {
+	font-weight: bold;
+}
+
+
+
+@import 'bootstrap';
+@import url("//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css");
