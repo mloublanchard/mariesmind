@@ -1,6 +1,33 @@
-<div class="jumbotron center">
-	<%= image_tag("bologna.jpg", :alt => "city of bologna in italy") %>
-	<h1>Marie's Mind</h1> 
+<%= render 'layouts/thumbnail' %>
 
-This website is brand new!
-</div>
+
+<div class="container">
+	<div class="main">
+		<%= render 'layouts/post' %>
+	</div><!-- .main --> 
+
+	<div class="sidebar">	
+
+		<div class="widget">
+			<%= image_tag("lou.png", :alt => "Marie-Lou Blanchard") %>
+			<p>This blog was made by Marie-Lou Blanchard</p>
+		</div><!-- .widget -->
+
+		<div class="widget">
+		<h3>Follow Me</h3>
+		<ul>
+			<li><a href="https://soundcloud.com/maries-mind" target="_blank">SoundCloud</a></li>
+			<li><a href="http://maries-mind.blogspot.com/" target="_blank">Blogger</a></li>
+			<li><a href="https://plus.google.com/u/0/106693329040910154911/posts" target="_blank">Google+</a></li>
+		</div><!-- .widget -->
+		
+		<div class="widget">
+			<h3>Quote of the Day</h3>
+			<blockquote><p>"Failure is simply the opportunity to begin again, this time more intelligently."</p>- Henry Ford</blockquote>
+		</div><!-- 	.widget -->
+
+		</div><!-- .sidebar --> 
+
+		<div class="clear"></div>
+	</div><!-- .container -->
+

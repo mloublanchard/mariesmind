@@ -1,4 +1,7 @@
 @import url(http://fonts.googleapis.com/css?family=Lato:400,700);
+@import url(http://fonts.googleapis.com/css?family=Lora:700);
+@import 'bootstrap';
+@import url("//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css");
 
 $headings-font-family:									lato;
 $font-family-sans-serif: 								'lato';
@@ -24,7 +27,11 @@ $link-color:														#3498db;
 $link-active-color:											#34495e;
 
 
-$jumbotron-heading-color:								#34495e;
+
+
+/*----------------------------------------------------------------------------- 
+01=BASE   
+-----------------------------------------------------------------------------*/
 
 .center {
 	text-align: center;
@@ -34,7 +41,87 @@ $jumbotron-heading-color:								#34495e;
 	font-weight: bold;
 }
 
+.clear {
+	clear: both;
+}
+
+img {
+	border-radius: 3px;
+	margin-bottom: 15px;
+}
+
+h1 {
+		font-family:'Lora', serif; 
+		font-weight: 400; 
+		font-size: 50px;
+}
+
+h2 {
+	margin-left: 10px;
+}
+
+.post {
+	position: center;
+	margin: 15px 15px;
+}
+
+.jumbotron img {
+	width: 100%;
+	margin: 0 auto;
+}
+
+/*----------------------------------------------------------------------------- 
+	02=LAYOUT  
+	-----------------------------------------------------------------------------*/
+	.container {
+		margin: 0 auto 0 auto;
+		width: 950px;
+	}
+
+	.main {
+		width: 600px;
+		float: left;
+		background-color: #FFF;
+		padding: 25px;
+		margin-right: 10px;
+		font-size: 12px;
+	}
+
+	.main img {
+		width: 550px; 
+		height: 300px;
+	}
+
+	.sidebar {
+		width: 350px;
+		float: left;
+		background-color: #FFF;
+		padding: 25px;
+		border-left: 2px solid #BBB;
+		border-bottom: 2px solid #BBB;
+		font-size: 15px;
+	}
+
+	.sidebar img {
+		width: 120px; 
+		height: 130px;
+		border-radius: none;
+	}
 
 
-@import 'bootstrap';
-@import url("//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css");
+	/*----------------------------------------------------------------------------- 
+	03=MAIN  
+	-----------------------------------------------------------------------------*/
+	.post {
+		margin-bottom: 50px;
+	}
+
+	.post-meta {
+		color: #999;
+		padding: 10px 0px;
+		border-top: #BBB solid 1px;
+	}
+
+	.widget {
+	margin-bottom: 45px;
+	}
