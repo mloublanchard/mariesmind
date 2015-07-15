@@ -33,8 +33,14 @@ $btn-primary-hover-color:								#34495e;
 		clear: both;
 	}
 
+	.navbar {
+		padding: 10px 30px 10px 20px;
+		font-size: 1.2em;
+	}
+
 	.navbar-brand {
 		font-weight: bold;
+		width: 400px;
 	}
 
 	span.glyphicon {
@@ -72,14 +78,10 @@ $btn-primary-hover-color:								#34495e;
 /*----------------------------------------------------------------------------- 
 	02=LAYOUT  
 -----------------------------------------------------------------------------*/
-	.navbar {
-		padding: 25px 35px 10px 30px;
-		font-size: 1.2em;
-	}
-
 	.container {
-		margin: 0 auto 0 auto;
+		margin: 0px auto 0 auto;
 		width: 800px;
+		padding-top: 120px;
 	}
 
 	.page-header {
