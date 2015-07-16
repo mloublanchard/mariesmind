@@ -16,6 +16,11 @@ $navbar-default-toggle-hover-bg:				#f39c12;
 $navbar-default-border:									#ecf0f1;
 $link-color:														#3498db;
 $link-active-color:											#34495e;
+$font-size-h1:            									7em;
+$font-size-h2:            									4em;
+$font-size-h3:            									3em;
+$font-size-h4:            									2em;
+$font-size-h5:            									1.2em;
 
 $btn-primary-bg:												#f39c12;
 $btn-danger-bg:													#e74c3c;
@@ -40,7 +45,6 @@ $btn-primary-hover-color:								#34495e;
 
 	.navbar-brand {
 		font-weight: bold;
-		width: 400px;
 	}
 
 	span.glyphicon {
@@ -52,27 +56,15 @@ $btn-primary-hover-color:								#34495e;
 -----------------------------------------------------------------------------*/
 	img {
 		border-radius: 3px;
-		margin-bottom: 15px;
 	}
 
-	.jumbotron p {
-		padding: 15px 15px;
-	}
 /*----------------------------------------------------------------------------- 
 	01.2=BASE-HEADINGS   
 -----------------------------------------------------------------------------*/
 	h1 {
 		font-family:'Lora', serif; 
-		font-weight: 400; 
-		font-size: 50px;
-	}
-
-	h2 {
-		margin-left: 10px;
-	}
-
-	h3 {
-		margin-left: 10px;
+		letter-spacing: -5px;
+		margin-bottom: 10px;
 	}
 
 /*----------------------------------------------------------------------------- 
@@ -81,7 +73,6 @@ $btn-primary-hover-color:								#34495e;
 	.container {
 		margin: 0px auto 0 auto;
 		width: 800px;
-		padding-top: 120px;
 	}
 
 	.page-header {
@@ -99,42 +90,28 @@ $btn-primary-hover-color:								#34495e;
 		font-size: 12px;
 	}
 
-	.sidebar {
+	.jumbotron {
 		width: 350px;
 		float: right;
-		background-color: #FFF;
-		padding: 10px;
+		padding: 0;
 		border-left: 1px solid #BBB;
 		border-bottom: 1px solid #BBB;
-		font-size: 15px;
-		border-radius: 3px;
+		position: fixed;
+		right: 0;
 	}
 
-	.sidebar img {
+	.jumbotron img {
 		width: 120px; 
 		height: 130px;
 		border-radius: none;
 	}
 
 	.widget {
-	margin-bottom: 45px;
+		margin-bottom: 45px;
 	}
 
 /*----------------------------------------------------------------------------- 
-	03=JUMBOTRON 
------------------------------------------------------------------------------*/
-	.jumbotron {
-		margin: 0 100px;
-		padding: 0 0;
-		width: 800px;
-	}
-
-	.jumbotron img {
-		width: 100%;
-	}
-
-/*----------------------------------------------------------------------------- 
-	04=POST  
+	03=POST  
 -----------------------------------------------------------------------------*/
 	.post {
 		margin: 15px 15px 50px 15px;
@@ -146,14 +123,13 @@ $btn-primary-hover-color:								#34495e;
 		border-top: #BBB solid 1px;
 	}
 
-		.main img {
+	.main img {
 		width: 550px; 
 		height: 300px;
 	}
 
-
 /*----------------------------------------------------------------------------- 
-	05=Bootstrap  
+	04=Bootstrap  
 -----------------------------------------------------------------------------*/
 @import 'bootstrap';
 @import url("//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css");
