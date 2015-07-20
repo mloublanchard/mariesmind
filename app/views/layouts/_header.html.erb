@@ -23,8 +23,8 @@
             <li><%= link_to raw('<span class="glyphicon glyphicon-user"></span> Account settings'), edit_user_registration_path %></li>
             <li><%= link_to raw('<span class="glyphicon glyphicon-log-out"></span> Leave'), destroy_user_session_path, method: :delete %></li>
             <% else %>
-            <li><%= link_to raw('<span class="glyphicon glyphicon-hand-up"></span> Sign in'), new_user_registration_path, class: "btn btn-lg" %></li>
-            <li><%= link_to raw('<span class="glyphicon glyphicon-log-in"></span> Welcome back!'), new_user_session_path, class: "btn btn-lg" %></li>
+            <li><%= link_to raw('<span class="glyphicon glyphicon-hand-up"></span> Open an account'), new_user_registration_path, class: "btn btn-lg" %></li>
+            <li><%= link_to raw('<span class="glyphicon glyphicon-log-in"></span> Log in'), new_user_session_path, class: "btn btn-lg" %></li>
         <% end %></li>
       </ul><!-- .nav navbar-nav navbar-right -->
     </div><!-- .navbar-collapse -->
