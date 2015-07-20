@@ -15,15 +15,16 @@
     <!-- Collect the nav links, forms, and other content for toggling -->
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
       <ul class="nav navbar-nav navbar-right">
-        <li><%= link_to "Purpose", purpose_path %></li>
-        <li><%= link_to "Product", product_path %></li>
-        <li><%= link_to "Blog", blog_path %></li>
-        <li><%= link_to "Contact", contact_path %></li>
+        <li><%= link_to raw('<span class="glyphicon glyphicon-eye-open"></span> Purpose'), purpose_path %></li>
+        <li><%= link_to raw('<span class="glyphicon glyphicon-headphones"></span> Product'), product_path %></li>
+        <li><%= link_to raw('<span class="glyphicon glyphicon-globe"></span> Blog'), blog_path %></li>
+        <li><%= link_to raw('<span class="glyphicon glyphicon-map-marker"></span> Contact'), contact_path %></li>
         <li><% if user_signed_in? %>
-            <li><%= link_to "Account settings", edit_user_registration_path %></li>
-            <%= link_to "Log out", destroy_user_session_path, method: :delete %>
+            <li><%= link_to raw('<span class="glyphicon glyphicon-user"></span> Account settings'), edit_user_registration_path %></li>
+            <li><%= link_to raw('<span class="glyphicon glyphicon-log-out"></span> Leave'), destroy_user_session_path, method: :delete %></li>
             <% else %>
-            <li><%= link_to raw('<span class="glyphicon glyphicon-user"></span> New member'), new_user_registration_path, class: "btn btn-lg" %></li>
+            <li><%= link_to raw('<span class="glyphicon glyphicon-hand-up"></span> Sign in'), new_user_registration_path, class: "btn btn-lg" %></li>
+            <li><%= link_to raw('<span class="glyphicon glyphicon-log-in"></span> Welcome back!'), new_user_session_path, class: "btn btn-lg" %></li>
         <% end %></li>
       </ul><!-- .nav navbar-nav navbar-right -->
     </div><!-- .navbar-collapse -->
