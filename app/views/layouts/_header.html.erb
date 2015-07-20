@@ -1,7 +1,6 @@
 <nav class="navbar navbar-default">
   <div class="container-fluid">
 
-
     <!-- Brand and toggle get grouped for better mobile display -->
     <div class="navbar-header">
       <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
@@ -15,30 +14,19 @@
 
     <!-- Collect the nav links, forms, and other content for toggling -->
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-
       <ul class="nav navbar-nav navbar-right">
-   
         <li><%= link_to "Purpose", purpose_path %></li>
         <li><%= link_to "Product", product_path %></li>
         <li><%= link_to "Blog", blog_path %></li>
         <li><%= link_to "Contact", contact_path %></li>
-        
-        <li class="dropdown">
-          <a class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><li><%= link_to raw('<span class="glyphicon glyphicon-user"></span> New member'), new_user_registration_path, class: "btn btn-lg" %></li></a>
-          <ul class="dropdown-menu">
-          <% if user_signed_in? %>
+        <li><% if user_signed_in? %>
             <li><%= link_to "Account settings", edit_user_registration_path %></li>
-            <li role="separator" class="divider"></li>
-            <li><%= link_to "Log out", destroy_user_session_path, method: :delete %></li>
-          <% else %>
-            <li><%= link_to "Welcome back!",new_user_session_path %></li>
-          <% end %>
-          </ul>
-        </li>
+            <%= link_to "Log out", destroy_user_session_path, method: :delete %>
+            <% else %>
+            <li><%= link_to raw('<span class="glyphicon glyphicon-user"></span> New member'), new_user_registration_path, class: "btn btn-lg" %></li>
+        <% end %></li>
+      </ul><!-- .nav navbar-nav navbar-right -->
+    </div><!-- .navbar-collapse -->
 
-      </ul>
-    </div><!-- /.navbar-collapse -->
-
-    
-  </div><!-- /.container-fluid -->
-</nav>
+  </div><!-- .container-fluid -->
+</nav><!-- .navbar navbar-default -->
