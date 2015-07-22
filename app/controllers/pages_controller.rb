@@ -5,9 +5,6 @@ class PagesController < ApplicationController
   def product
   end
 
-  def purpose
-  end
-
   def contact
   end
   
