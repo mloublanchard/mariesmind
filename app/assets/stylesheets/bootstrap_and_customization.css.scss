@@ -17,11 +17,7 @@ $navbar-default-border:									#ecf0f1;
 $navbar-height:                           112px;
 $link-color:														#3498db;
 $link-active-color:											#34495e;
-$font-size-h1:            									7em;
-$font-size-h2:            									4em;
-$font-size-h3:            									3em;
-$font-size-h4:            									2em;
-$font-size-h5:            								1.2em;
+$font-size-h1:            									3em;
 
 $btn-primary-bg:												#f39c12;
 $btn-danger-bg:													#e74c3c;
@@ -31,12 +27,17 @@ $btn-primary-hover-color:								#34495e;
 /*----------------------------------------------------------------------------- 
 	01=BASE   
 -----------------------------------------------------------------------------*/
-	.center {
-		text-align: center;
-	}
-
 	.clear {
 		clear: both;
+	}
+
+	.container {
+		width: 990px;
+	}
+
+	.header {
+		text-align: center;
+		padding-bottom: 15px;
 	}
 
 	.navbar {
@@ -53,89 +54,31 @@ $btn-primary-hover-color:								#34495e;
 	  font-size: 1.2em;
 	}
 
-	.btn btn-primary {
-		border: none;
-	}
-
-/*----------------------------------------------------------------------------- 
-	01.1=BASE-IMAGE   
------------------------------------------------------------------------------*/
 	img {
 		border-radius: 3px;
 	}
 
-/*----------------------------------------------------------------------------- 
-	01.2=BASE-HEADINGS   
------------------------------------------------------------------------------*/
 	h1 {
-		letter-spacing: -5px;
+		letter-spacing: -2px;
 		margin-bottom: 10px;
 	}
 
-/*----------------------------------------------------------------------------- 
-	02=LAYOUT  
------------------------------------------------------------------------------*/
-	.container {
-		margin: 0px auto 0 auto;
-		width: 800px;
-	}
-
-	.page-header {
-		width: 900px;
-  	top: 50%;
-  	left: 50%;
-	}
-
-	.main {
-		width: 600px;
-		float: left;
-		background-color: #FFF;
-		padding: 25px;
-		margin-right: 10px;
-		font-size: 12px;
-	}
-
 	.jumbotron {
-		width: 350px;
-		float: right;
-		padding: 0;
-		border-left: 1px solid #BBB;
-		border-bottom: 1px solid #BBB;
-		position: fixed;
-		right: 0;
-		top: 25%;
+		width: 180px;
+		font-size: 12px;
+		padding: 0 5px 0 10px;
 	}
 
-	.jumbotron img {
-		width: 120px; 
-		height: 130px;
-		border-radius: none;
+	.jumbotron a {
+		font-size: 18px;
 	}
 
-	.widget {
-		margin-bottom: 45px;
+	.jumbotron h3 {
+		font-size: 21px;
 	}
 
 /*----------------------------------------------------------------------------- 
-	03=POST  
------------------------------------------------------------------------------*/
-	.post {
-		margin: 15px 15px 50px 15px;
-	}
-
-	.post-meta {
-		color: #999;
-		padding: 10px 0px;
-		border-top: #BBB solid 1px;
-	}
-
-	.main img {
-		width: 550px; 
-		height: 300px;
-	}
-
-/*----------------------------------------------------------------------------- 
-	04=Bootstrap  
+	02=Bootstrap  
 -----------------------------------------------------------------------------*/
 @import 'bootstrap';
 @import url("//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css");

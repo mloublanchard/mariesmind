@@ -1,26 +1,24 @@
 
 <div class="container">
-	<h1>What is in your mind?</h1>
+	<div class="header">
+		<h1>What is in your mind?</h1>
+	</div>
+
 	<div class="main">
 		<%= render 'layouts/post' %>
 	</div><!-- .main --> 
 
 	<div class="jumbotron">	
 
-		<div class="widget">
-			<%= image_tag("lou.png", :alt => "Marie-Lou Blanchard") %>
-			<p>This blog was made by <span style="color:#34495e;">Marie-Lou Blanchard</span></p>
-		</div><!-- .widget -->
+			<%= image_tag("lou.png", :alt => "Marie-Lou Blanchard", :class => "center-block") %>
+			Made by <span style="color:#34495e;">Marie-Lou Blanchard</span>
 
-		<div class="widget">
-		<h5>Follow Me</h5>
+		<h3>Follow me on</h3>
 		<ul>
 			<li><a href="https://soundcloud.com/maries-mind" target="_blank">SoundCloud</a></li>
 			<li><a href="http://maries-mind.blogspot.com/" target="_blank">Blogger</a></li>
 			<li><a href="https://plus.google.com/u/0/106693329040910154911/posts" target="_blank">Google+</a></li>
-		</div><!-- .widget -->
 	</div><!-- .jumbotron --> 
 
-		<div class="clear"></div>
 	</div><!-- .container -->
 
