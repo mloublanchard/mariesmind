@@ -5,22 +5,19 @@
 $headings-font-family:									 'Lora';
 $headings-color: 												#34495e;
 $font-family-sans-serif: 								 'lato';
-$navbar-default-bg:											#f39c12;
-$navbar-default-link-color: 						#ecf0f1;
+$navbar-default-bg:											#1C68A4;
+$navbar-default-link-color: 						#FFFFFF;
 $navbar-default-link-hover-color: 			#34495e;
 $navbar-default-brand-hover-color:			#34495e;
-$navbar-default-brand-size: 						  2.4em;
-$navbar-default-toggle-border-color: 		#f39c12;
+$navbar-default-toggle-border-color: 		#1C68A4;
 $navbar-default-toggle-icon-bar-bg:			#34495e;
-$navbar-default-toggle-hover-bg:				#f39c12;
-$navbar-default-border:									#ecf0f1;
-$navbar-height:                           112px;
+$navbar-default-toggle-hover-bg:				#1C68A4;
+$navbar-default-border:									#1C68A4;
 $link-color:														#3498db;
 $link-active-color:											#34495e;
 $font-size-h1:            									3em;
-
-$btn-primary-bg:												#f39c12;
-$btn-danger-bg:													#e74c3c;
+$btn-primary-bg:												#1C68A4;
+$btn-danger-bg:													#f39c12;
 $btn-primary-hover-color:								#34495e;
 
 
@@ -41,8 +38,6 @@ $btn-primary-hover-color:								#34495e;
 	}
 
 	.navbar {
-		margin: 40px 224px 0px 224px;
-		width: 990px;
 		font-size: 1.2em;
 	}
 
